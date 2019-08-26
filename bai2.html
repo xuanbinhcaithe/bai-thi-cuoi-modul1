@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 02</title>
+</head>
+<body>
+<!-- viết hàm tryRemoveFromArray -->
+
+
+    <script type="text/javascript">
+        function tryRemoveFromArray(arr,n) {
+            for (let i=0;i<arr.length;i++) {
+                if (arr[i]==n) {
+                    arr.splice(i,1);
+                    i--;
+                }
+            }
+            return arr;
+        }
+
+        let array=[12,6,3,12,7,21,5,7,7];
+        console.log(tryRemoveFromArray(array,7));
+
+    </script>
+
+
+
+
+</body>
+</html>
